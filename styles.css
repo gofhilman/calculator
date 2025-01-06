@@ -25,10 +25,13 @@ body {
 #display {
     width: 94%;
     height: 80px;
+    line-height: 90px;
+    font-size: 60px;
     border: 1.5px solid gray;
     border-radius: 5px;
     background-color: rgb(230, 230, 230);
     margin-top: 8px;
+    text-align: end;
 }
 
 #button-wrapper {
@@ -61,6 +64,6 @@ body {
     background-color: gold;
 }
 
-.button.operator {
+.button.teal {
     background-color: teal;
 }
