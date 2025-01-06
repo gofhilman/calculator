@@ -84,7 +84,7 @@ const displayNumber = document.querySelector('#display');
 // Initialize display
 clear();
 
-// Click event listener to populate display
+// Click event listener for the calculator
 buttons.addEventListener('click', (event) => {
     let tempMath = convertButtonToMath(event.target.id);
     if (!Number.isNaN(+tempMath)) {
@@ -108,4 +108,9 @@ buttons.addEventListener('click', (event) => {
         operator = '';
         clear();
     }  
-})
+});
+
+// Keyboard event listener to input numbers
+document.addEventListener('keypress', (event) => {
+    if(!Number.isNaN(+event.key)) populateDisplay(event.key);
+});
